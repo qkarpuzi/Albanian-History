@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete History of Albania | From Ancient Times to Modern Independence</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --albania-red: #cc0001;
+            --albania-black: #000000;
+            --albania-gold: #ffcc00;
+            --section-spacing: 80px;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        
+        .navbar {
+            background-color: var(--albania-black);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .navbar-brand, .nav-link, .navbar-toggler {
+            color: var(--albania-red) !important;
+            font-weight: 600;
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-toggler {
+            border-color: var(--albania-red);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204, 0, 1, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        
+        .nav-link {
+            position: relative;
+            margin: 0 10px;
+            padding: 8px 0;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--albania-red);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .nav-link.active {
+            color: white !important;
+        }
+        
+        .dropdown-menu {
+            background-color: var(--albania-black);
+            border: 1px solid var(--albania-red);
+        }
+        
+        .dropdown-item {
+            color: var(--albania-red);
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-item:hover {
+            background-color: var(--albania-red);
+            color: white;
+        }
+        
+        .content {
+            padding-top: 120px;
+        }
+        
+        .section-title {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+            color: var(--albania-black);
+            font-weight: 700;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            background: linear-gradient(90deg, var(--albania-red), var(--albania-black));
+            border-radius: 3px;
+        }
+        
+        .history-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: var(--section-spacing);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid var(--albania-red);
+        }
+        
+        .history-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer {
+            background-color: var(--albania-black);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .footer a {
+            color: var(--albania-red);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer a:hover {
+            color: white;
+        }
+        
+        .social-icons {
+            margin: 20px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            background-color: var(--albania-red);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: white;
+            color: var(--albania-red);
+            transform: translateY(-3px);
+        }
+        
+        .btn-more {
+            background-color: var(--albania-red);
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-more:hover {
+            background-color: var(--albania-black);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(204, 0, 1, 0.3);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1594741158701-e5ab913e178b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--albania-red);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid var(--albania-red);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -12px;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 6px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .timeline-year {
+            font-weight: bold;
+            color: var(--albania-red);
+            margin-bottom: 10px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 18px;
+            }
+            
+            .left::after, .right::after {
+                left: 18px;
+            }
+            
+            .right {
+                left: 0;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+        
+        .modal-content {
+            background-color: #f8f9fa;
+            border: 2px solid var(--albania-red);
+        }
+        
+        .modal-header {
+            background-color: var(--albania-black);
+            color: white;
+            border-bottom: 2px solid var(--albania-red);
+        }
+        
+        .btn-close {
+            filter: invert(1);
+        }
+        
+        .history-image {
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .history-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .figure-caption {
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        .quote {
+            font-style: italic;
+            border-left: 4px solid var(--albania-red);
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #555;
+        }
+        
+        .quote-author {
+            font-weight: bold;
+            color: var(--albania-black);
+            text-align: right;
+        }
+        
+        .highlight {
+            background-color: rgba(204, 0, 1, 0.1);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        
+        .king-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .king-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .king-name {
+            color: var(--albania-red);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .king-dates {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .tribe-badge {
+            display: inline-block;
+            background-color: var(--albania-black);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .period-header {
+            background: linear-gradient(90deg, var(--albania-red), var(--albania-black));
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 20px;
+        }
+        
+        .floating-nav {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1000;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 10px 5px;
+            display: none;
+        }
+        
+        .floating-nav a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            color: var(--albania-black);
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .floating-nav a.active {
+            color: var(--albania-red);
+        }
+        
+        .floating-nav a span {
+            display: none;
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--albania-black);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+            margin-right: 10px;
+        }
+        
+        .floating-nav a:hover span {
+            display: block;
+        }
+        
+        .floating-nav a i {
+            font-size: 1.2rem;
+        }
+        
+        @media (min-width: 992px) {
+            .floating-nav {
+                display: block;
+            }
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .interactive-map {
+            height: 400px;
+            background-color: #eee;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Illyrian_Tribes_%28English%29.svg/1200px-Illyrian_Tribes_%28English%29.svg.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .map-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .counter-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1580585981725-4a78db35cf00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin: var(--section-spacing) 0;
+        }
+        
+        .counter-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--albania-red);
+            margin-bottom: 10px;
+        }
+        
+        .counter-text {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+        
+        .conflict-timeline {
+            border-left: 3px solid var(--albania-red);
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+        
+        .conflict-event {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .conflict-event:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: var(--albania-red);
+            border-radius: 50%;
+            left: -29px;
+            top: 5px;
+        }
+        
+        .conflict-date {
+            color: var(--albania-red);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .person-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .person-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .person-image {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .person-content {
+            padding: 15px;
+        }
+        
+        .person-name {
+            color: var(--albania-red);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .person-role {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .person-bio {
+            font-size: 0.95rem;
+        }
+        
+        .tab-content {
+            padding: 20px 0;
+        }
+        
+        .nav-tabs .nav-link {
+            color: var(--albania-black);
+            font-weight: bold;
+            border: none;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: var(--albania-red);
+            background: transparent;
+            border-bottom: 3px solid var(--albania-red);
+        }
+        
+        .nav-tabs {
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIj48cGF0aCBmaWxsPSIjY2MwMDAxIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTUwLDI1MCBMNDUwLDI1MCBMNDUwLDM1MCBMMTUwLDM1MCBaIi8+PC9zdmc+" alt="Albanian Flag">
+                History of Albania
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ancient-history">Ancient History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skanderbeg">Skanderbeg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#modern-history">Modern History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kosovo-conflict">Kosovo Conflict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#culture">Culture</a></li>
+                            <li><a class="dropdown-item" href="#notable-figures">Notable Figures</a></li>
+                            <li><a class="dropdown-item" href="#historic-sites">Historic Sites</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="floating-nav">
+        <a href="#ancient-history" title="Ancient History"><i class="fas fa-landmark"></i><span>Ancient History</span></a>
+        <a href="#skanderbeg" title="Skanderbeg"><i class="fas fa-helmet-battle"></i><span>Skanderbeg</span></a>
+        <a href="#modern-history" title="Modern History"><i class="fas fa-building"></i><span>Modern History</span></a>
+        <a href="#kosovo-conflict" title="Kosovo Conflict"><i class="fas fa-fist-raised"></i><span>Kosovo Conflict</span></a>
+        <a href="#timeline" title="Timeline"><i class="fas fa-history"></i><span>Timeline</span></a>
+    </div>
+
+    <div class="hero-section animate__animated animate__fadeIn">
+        <div class="container">
+            <h1 class="hero-title">Discover Albania's Rich History</h1>
+            <p class="hero-subtitle">From ancient Illyrian tribes to modern independence, explore the fascinating journey of the Albanian people through the centuries</p>
+            <a href="#ancient-history" class="btn btn-more btn-lg animate__animated animate__pulse animate__infinite">Explore Now</a>
+        </div>
+    </div>
+
+    <div class="container content">
+        <div id="ancient-history" class="history-section animate__animated animate__fadeInUp">
+            <div class="period-header">
+                <h2 class="section-title mb-0" style="color: white;">Ancient History</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <figure>
+                        <img src="https://eia476h758b.exactdn.com/wp-content/uploads/2024/01/Illyrians.jpeg" alt="Illyrian warriors" class="img-fluid history-image">
+                        <figcaption class="figure-caption">Illyrian warriors depicted in ancient art</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <h3>Pelasgians: The Earliest Roots</h3>
+                    <p>The Pelasgians are a bit of a mystery—ancient Greek sources like Homer and Herodotus describe them as a pre-Indo-European people in the Balkans and Aegean, possibly predating 2000 BCE :cite[1]:cite[4]. Some Albanian scholars and nationalists argue they were proto-Albanians, citing their presence in regions like Epirus and Thessaly, where Illyrians later emerged :cite[7].</p>
+                    <p>Evidence is thin—mostly myths and Greek references—but archaeological finds, like Bronze Age tools in southern Albania (e.g., Maliq), suggest early inhabitants. They likely lived in simple, tribal societies, farming and trading across the Balkans. No clear kings or polities are recorded, and their language is unknown, but some link their legacy to Albanian linguistic continuity, though this is speculative :cite[1]:cite[4].</p>
+                    
+                    <h3>Illyrians: The Tribal Ancestors</h3>
+                    <p>By the Iron Age (circa 1000 BCE), the Illyrians, Indo-European tribes, dominated the western Balkans, including modern Albania :cite[2]:cite[5]. Albanians often see them as direct forebears due to geographic overlap, cultural continuity, and linguistic hints (e.g., shared place names like "Dardania").</p>
+                    <p>The Illyrians were organized into tribes like the Taulantii, Ardiaei, Enchelei, Albanoi (near modern Tirana), and others, with key centers in Shkodra, Lissus, and Apollonia :cite[2].</p>
+                    
+                    <div class="interactive-map">
+                        <div class="map-overlay">
+                            <h4>Illyrian Tribes in the Balkans</h4>
+                            <p>Interactive map showing the distribution of Illyrian tribes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Major Illyrian Tribes</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Tribe</th>
+                                    <th>Region</th>
+                                    <th>Significance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Albanoi</td>
+                                    <td>Central Albania</td>
+                                    <td>Gave name to Albania, centered near Krujë</td>
+                                </tr>
+                                <tr>
+                                    <td>Ardiaei</td>
+                                    <td>Coastal Montenegro & Albania</td>
+                                    <td>Founded Illyrian Kingdom, strong navy</td>
+                                </tr>
+                                <tr>
+                                    <td>Taulantii</td>
+                                    <td>Central Albania</td>
+                                    <td>Powerful tribe, frequent conflicts with Macedon</td>
+                                </tr>
+                                <tr>
+                                    <td>Dardani</td>
+                                    <td>Kosovo, North Macedonia</td>
+                                    <td>Powerful tribe, mined iron and silver</td>
+                                </tr>
+                                <tr>
+                                    <td>Labeatae</td>
+                                    <td>Shkodër region</td>
+                                    <td>Controlled Lake Shkodra, last Illyrian rulers</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skanderbeg" class="history-section animate__animated animate__fadeInUp">
+            <div class="period-header">
+                <h2 class="section-title mb-0" style="color: white;">Skanderbeg: Albania's National Hero</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Skanderbeg_%26_his_men.jpg" alt="Skanderbeg and his men" class="img-fluid history-image">
+                        <figcaption class="figure-caption">Skanderbeg leading his forces against the Ottomans</figcaption>
+                    </figure>
+                    
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/KHj2XdXX-aI" title="Skanderbeg documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Gjergj Kastrioti Skanderbeg (1405–1468)</h3>
+                    <p>The national hero. Born to the Kastrioti family, he was raised as an Ottoman hostage but defected in 1443 during the Battle of Niš, seizing Kruja. He formed the League of Lezhë (1444), uniting Albanian nobles against the Ottomans :cite[6].</p>
+                    <p>Skanderbeg's guerrilla tactics and victories, like the Battle of Torvioll (1444) and sieges of Kruja (1450, 1466–67), held off Ottoman armies under Murad II and Mehmed II. His alliances with Venice and Naples made him a European legend :cite[6].</p>
+                    <p>After his death in 1468, resistance crumbled, and Albania fell fully to the Ottomans by 1479. Many Albanians fled to Italy, forming Arbëreshë communities.</p>
+                    
+                    <div class="quote">
+                        "I have not brought you liberty, I found it here, among you."
+                        <div class="quote-author">- Skanderbeg</div>
+                    </div>
+                    
+                    <h4>Key Battles</h4>
+                    <ul>
+                        <li>Battle of Torvioll (1444) - Decisive victory against the Ottomans</li>
+                        <li>Battle of Albulena (1457) - Crushed Ottoman forces</li>
+                        <li>Siege of Krujë (1450) - Successfully defended against massive Ottoman army</li>
+                        <li>Siege of Krujë (1466-67) - Final successful defense</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="counter-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="counter-number" id="years-counter">0</div>
+                        <div class="counter-text">Years of History</div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="counter-number" id="battles-counter">0</div>
+                        <div class="counter-text">Battles Led by Skanderbeg</div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="counter-number" id="kings-counter">0</div>
+                        <div class="counter-text">Illyrian Kings</div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="counter-number" id="sites-counter">0</div>
+                        <div class="counter-text">Historic Sites</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modern-history" class="history-section animate__animated animate__fadeInUp">
+            <div class="period-header">
+                <h2 class="section-title mb-0" style="color: white;">Modern History</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Ottoman Rule (1479–1912)</h3>
+                    <p>Ottoman Albania saw widespread Islamization, especially among elites via the timar system, though Christians (Catholic and Orthodox) persisted in mountains. Albanians like Ali Pasha of Tepelenë (1740–1822) rose as semi-independent rulers.</p>
+                    <p>The 19th-century Albanian Renaissance (Rilindja) sparked national consciousness through figures like Naum Veqilharxhi and the Frashëri brothers, promoting Albanian language and culture.</p>
+                    
+                    <h3>Independence and World Wars</h3>
+                    <p>Albania declared independence on November 28, 1912, in Vlorë, led by Ismail Qemali, amid the Ottoman Empire's collapse during the First Balkan War. The London Conference (1913) recognized Albania but ceded Kosovo to Serbia, fueling tensions.</p>
+                    <p>World War I (1914–1918) saw Albania occupied by multiple powers (Italy, Serbia, Austria-Hungary). Post-war, Albania stabilized under Ahmet Zogu, who became King Zog I in 1928 but leaned on Italian support.</p>
+                </div>
+                <div class="col-md-6">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Albania_%281912-1914%29.svg" alt="First Albanian flag" class="img-fluid history-image">
+                        <figcaption class="figure-caption">The first flag of independent Albania (1912-1914)</figcaption>
+                    </figure>
+                    
+                    <h3>World War II and Communist Era</h3>
+                    <p>World War II (1939–1945): Italy invaded in 1939, making Albania a protectorate under Victor Emmanuel III. Resistance grew under communist leader Enver Hoxha, alongside non-communist groups like Balli Kombëtar. By 1944, Hoxha's partisans liberated Albania, establishing a communist state.</p>
+                    <p>Hoxha ruled from 1944 to 1985, isolating Albania with strict Stalinist policies, banning religion, and aligning briefly with Yugoslavia, the USSR, and China before breaking ties. His regime built thousands of bunkers, fearing invasion.</p>
+                    
+                    <h3>Post-Communist Transition</h3>
+                    <p>After his death, Ramiz Alia eased policies, but communism collapsed in 1991 amid protests. The 1990s were chaotic, with economic crises and the 1997 pyramid scheme collapse sparking unrest.</p>
+                    <p>Since 1991, Albania transitioned to democracy, joining NATO in 2009 and becoming an EU candidate in 2014. It faces challenges like corruption and emigration but has stabilized politically. The Albanian diaspora, especially in Italy, Greece, and the U.S., remains influential.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="kosovo-conflict" class="history-section animate__animated animate__fadeInUp">
+            <div class="period-header">
+                <h2 class="section-title mb-0" style="color: white;">Kosovo Liberation Army (UCK) and 2001 Macedonia Conflict</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs" id="kosovoTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="uck-tab" data-bs-toggle="tab" data-bs-target="#uck" type="button" role="tab" aria-controls="uck" aria-selected="true">Kosovo Liberation Army</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="jashari-tab" data-bs-toggle="tab" data-bs-target="#jashari" type="button" role="tab" aria-controls="jashari" aria-selected="false">Adem Jashari</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="thaci-tab" data-bs-toggle="tab" data-bs-target="#thaci" type="button" role="tab" aria-controls="thaci" aria-selected="false">Hashim Thaçi</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="macedonia-tab" data-bs-toggle="tab" data-bs-target="#macedonia" type="button" role="tab" aria-controls="macedonia" aria-selected="false">2001 Macedonia Conflict</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="kosovoTabsContent">
+                        <div class="tab-pane fade show active" id="uck" role="tabpanel" aria-labelledby="uck-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Kosovo Liberation Army (UCK)</h3>
+                                    <p>The Kosovo Liberation Army (Ushtria Çlirimtare e Kosovës, or UÇK) was an ethnic Albanian separatist militia that fought for the independence of Kosovo from the Federal Republic of Yugoslavia in the 1990s :cite[8].</p>
+                                    <p>The UÇK emerged in the early 1990s, with its first public appearance in 1995-1996. Its campaign escalated significantly in 1997-1999, leading to the Kosovo War (1998-1999). The conflict ended with NATO intervention against Yugoslavia, resulting in the establishment of the United Nations Interim Administration Mission in Kosovo (UNMIK).</p>
+                                    <p>After the war, the UÇK was disbanded and transformed into the Kosovo Protection Corps, a civilian emergency response organization. Many former UÇK members entered politics, including Hashim Thaçi, who became Kosovo's first prime minister and later president.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Flag_of_the_Kosovo_Liberation_Army.svg/1200px-Flag_of_the_Kosovo_Liberation_Army.svg.png" alt="UCK Flag" class="img-fluid history-image">
+                                    <div class="conflict-timeline">
+                                        <div class="conflict-event">
+                                            <div class="conflict-date">1996</div>
+                                            <p>First public appearance of UÇK with attacks against Serbian security forces</p>
+                                        </div>
+                                        <div class="conflict-event">
+                                            <div class="conflict-date">1998</div>
+                                            <p>Full-scale war begins between UÇK and Yugoslav forces</p>
+                                        </div>
+                                        <div class="conflict-event">
+                                            <div class="conflict-date">1999</div>
+                                            <p>NATO intervention; UN administration established in Kosovo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="jashari" role="tabpanel" aria-labelledby="jashari-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Adem Jashari (1955–1998)</h3>
+                                    <p>Adem Jashari was one of the founders of the Kosovo Liberation Army (KLA), a Kosovo Albanian separatist militia which fought for the secession of Kosovo from Yugoslavia during the 1990s :cite[8].</p>
+                                    <p>Beginning in 1991, Jashari participated in attacks against the Serbian police before travelling to Albania to receive military training. Arrested in 1993, he was released at the behest of the Albanian Army and later returned to Kosovo, where he continued launching attacks against the Yugoslav establishment.</p>
+                                    <p>In July 1997, he was convicted of terrorism in absentia by a Yugoslav court. After several unsuccessful attempts to capture or kill him, Serbian police launched an attack against Jashari's home in Prekaz in March 1998. The battle that followed resulted in the deaths of 58 members of Jashari's family, including that of Jashari, his wife, brother and son.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Adem_Jashari_%28cropped%29.jpg/800px-Adem_Jashari_%28cropped%29.jpg" alt="Adem Jashari" class="img-fluid history-image">
+                                    <blockquote class="quote">
+                                        "Seen as the 'father of the KLA', Jashari is considered a symbol of Kosovar independence by ethnic Albanians."
+                                        <div class="quote-author">- Wikipedia</div>
+                                    </blockquote>
+                                    <p>Jashari is regarded by many in Kosovo as being the "father of the KLA". Portraits of him carrying an automatic weapon often adorn the walls of homes inhabited by ethnic Albanians. Considered a symbol of independence by Kosovo Albanians, the anniversary of Jashari's death is annually commemorated in Kosovo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="thaci" role="tabpanel" aria-labelledby="thaci-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Hashim Thaçi</h3>
+                                    <p>Hashim Thaçi is a Kosovar Albanian politician who was the prime minister of Kosovo from 2008 to 2014 and the president of Kosovo from 2016 to 2020. He was a leader of the Kosovo Liberation Army (KLA) during the Kosovo War.</p>
+                                    <p>Thaçi was one of the participants in the Rambouillet peace talks in 1999 that sought to resolve the Kosovo crisis. After the war, he entered politics and became the leader of the Democratic Party of Kosovo (PDK).</p>
+                                    <p>In April 2016, Thaçi was elected president by the Parliament of Kosovo. His presidency was marked by efforts to normalize relations with Serbia and attempts to advance Kosovo's international recognition. In 2020, he was indicted by the Kosovo Specialist Chambers for war crimes and crimes against humanity during the Kosovo War, leading to his resignation.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Hashim_Tha%C3%A7i_2018-03-21_%28cropped%29.jpg/800px-Hashim_Tha%C3%A7i_2018-03-21_%28cropped%29.jpg" alt="Hashim Thaçi" class="img-fluid history-image">
+                                    <div class="quote">
+                                        "Thaçi was a central figure in the Kosovo Liberation Army and later in Kosovar politics."
+                                    </div>
+                                    <p>Despite his controversial legacy and indictment, Thaçi remains a significant figure in modern Kosovar history and the struggle for independence.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="macedonia" role="tabpanel" aria-labelledby="macedonia-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>2001 Macedonia Conflict</h3>
+                                    <p>The 2001 Macedonia conflict was an armed conflict between the Macedonian government and ethnic Albanian insurgents, primarily from the National Liberation Army (NLA). The conflict lasted from January to November 2001, ending with the Ohrid Agreement.</p>
+                                    <p>The NLA's goals included greater rights and autonomy for the ethnic Albanian minority in Macedonia, which comprised about 25% of the population. The insurgents sought to address issues of discrimination and unequal treatment.</p>
+                                    <p>The conflict began in January 2001 when the NLA attacked police and army facilities in mainly Albanian-populated areas. The fighting intensified throughout the year, with the NLA taking control of territories in northern and western Macedonia.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/NLA_%28National_Liberation_Army%29.svg/1200px-NLA_%28National_Liberation_Army%29.svg.png" alt="NLA Flag" class="img-fluid history-image">
+                                    <div class="conflict-timeline">
+                                        <div class="conflict-event">
+                                            <div class="conflict-date">January 2001</div>
+                                            <p>NLA begins attacks on security forces</p>
+                                        </div>
+                                        <div class="conflict-event">
+                                            <div class="conflict-date">March-June 2001</div>
+                                            <p>Intense fighting, NLA captures territory</p>
+                                        </div>
+                                        <div class="conflict-event">
+                                            <div class="conflict-date">August 2001</div>
+                                            <p>Ohrid Agreement signed, ending hostilities</p>
+                                        </div>
+                                        <div class="conflict-event">
+                                            <div class="conflict-date">November 2001</div>
+                                            <p>NLA officially disbands</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <h4>Ohrid Agreement and Aftermath</h4>
+                                    <p>The Ohrid Framework Agreement was signed on August 13, 2001, by the Macedonian government and Albanian representatives. The agreement:</p>
+                                    <ul>
+                                        <li>Granted greater rights to the Albanian minority</li>
+                                        <li>Made Albanian an official language in areas with significant Albanian population</li>
+                                        <li>Increased Albanian representation in government and security forces</li>
+                                        <li>Provided for decentralization of government</li>
+                                    </ul>
+                                    <p>After the agreement, the NLA officially disbanded in November 2001, with many members handing over their weapons to NATO forces. The conflict resulted in approximately 200 deaths and displaced tens of thousands of people. The Ohrid Agreement successfully ended the violence and has been largely successful in maintaining peace since.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="timeline" class="animate__animated animate__fadeIn">
+            <div class="period-header">
+                <h2 class="section-title mb-0" style="color: white;">Albanian History Timeline</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">Before 2000 BCE</div>
+                        <p>Pelasgians inhabit the Balkans, possible proto-Albanians</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1000 BCE</div>
+                        <p>Illyrian tribes dominate the western Balkans</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">385–358 BCE</div>
+                        <p>Reign of King Bardylis, unification of southern Illyrian tribes</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">168 BCE</div>
+                        <p>Roman conquest of Illyria begins</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">395 CE</div>
+                        <p>Albania falls under Byzantine control after Roman Empire splits</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1079 CE</div>
+                        <p>First recorded mention of "Arbanitai" (Albanians) in Byzantine records</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1190</div>
+                        <p>Principality of Arbër established under Progon of Kruja</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1443-1468</div>
+                        <p>Skanderbeg leads resistance against Ottoman Empire</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1479</div>
+                        <p>Albania fully falls to Ottoman Empire after Skanderbeg's death</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1912</div>
+                        <p>Albania declares independence from Ottoman Empire</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1939</div>
+                        <p>Italy invades Albania during World War II</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1944</div>
+                        <p>Communist partisans take control of Albania</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1991</div>
+                        <p>Fall of communism and transition to democracy</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1998-1999</div>
+                        <p>Kosovo War and NATO intervention</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2001</div>
+                        <p>Conflict in Macedonia, Ohrid Agreement</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2009</div>
+                        <p>Albania joins NATO</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2014</div>
+                        <p>Albania becomes EU candidate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="notable-figures" class="history-section animate__animated animate__fadeInUp">
+            <div class="period-header">
+                <h2 class="section-title mb-0" style="color: white;">Notable Figures</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="person-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Skanderbeg_portrait.jpg" class="person-image" alt="Skanderbeg">
+                        <div class="person-content">
+                            <h5 class="person-name">Gjergj Kastrioti (Skanderbeg)</h5>
+                            <div class="person-role">National Hero (1405–1468)</div>
+                            <p class="person-bio">Led Albanian resistance against the Ottoman Empire for 25 years, successfully defending Albania against numerous invasions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="person-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Adem_Jashari_%28cropped%29.jpg" class="person-image" alt="Adem Jashari">
+                        <div class="person-content">
+                            <h5 class="person-name">Adem Jashari</h5>
+                            <div class="person-role">KLA Commander (1955–1998)</div>
+                            <p class="person-bio">One of the founders of the Kosovo Liberation Army, symbol of Kosovar resistance against Serbian forces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="person-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Hashim_Tha%C3%A7i_2018-03-21_%28cropped%29.jpg" class="person-image" alt="Hashim Thaçi">
+                        <div class="person-content">
+                            <h5 class="person-name">Hashim Thaçi</h5>
+                            <div class="person-role">Kosovo Politician (1968–)</div>
+                            <p class="person-bio">KLA leader who became the first Prime Minister and later President of Kosovo after its declaration of independence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery" class="history-section animate__animated animate__fadeInUp">
+            <div class="period-header">
+                <h2 class="section-title mb-0" style="color: white;">Gallery</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Theth_National_Park_Albania.jpg" class="img-fluid rounded" alt="Albanian landscape">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Berat_Castle.jpg" class="img-fluid rounded" alt="Berat Castle">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Gjirokastra_Castle_aerial.jpg" class="img-fluid rounded" alt="Gjirokastër Castle">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Durres_Amphitheatre.jpg" class="img-fluid rounded" alt="Durrës Amphitheatre">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Ksamil_Islands.jpg" class="img-fluid rounded" alt="Ksamil Islands">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Tirana_Skanderbeg_Square.jpg" class="img-fluid rounded" alt="Tirana">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>History of Albania</h5>
+                    <p>Exploring the rich heritage and culture of the Albanian people through the ages.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#ancient-history">Ancient History</a></li>
+                        <li><a href="#skanderbeg">Skanderbeg</a></li>
+                        <li><a href="#modern-history">Modern History</a></li>
+                        <li><a href="#kosovo-conflict">Kosovo Conflict</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="mb-0">&copy; 2024 History of Albania. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.querySelector('.navbar-brand img').style.height = '30px';
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.querySelector('.navbar-brand img').style.height = '40px';
+            }
+            
+            // Update floating nav active state
+            const sections = document.querySelectorAll('.history-section, #timeline');
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.floating-nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = function() {
+            const sections = document.querySelectorAll('.history-section, .timeline');
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        };
+        
+        // Counter animation
+        function animateCounter(elementId, finalValue, duration) {
+            let startTime = null;
+            const element = document.getElementById(elementId);
+            
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                const value = Math.floor(progress * finalValue);
+                element.textContent = value;
+                
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+            
+            window.requestAnimationFrame(step);
+        }
+        
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+        
+        let countersAnimated = false;
+        
+        function checkCounters() {
+            const counterSection = document.querySelector('.counter-section');
+            if (isInViewport(counterSection) && !countersAnimated) {
+                animateCounter('years-counter', 4000, 2000);
+                animateCounter('battles-counter', 25, 1500);
+                animateCounter('kings-counter', 5, 1000);
+                animateCounter('sites-counter', 12, 1800);
+                countersAnimated = true;
+            }
+        }
+        
+        window.addEventListener('scroll', function() {
+            animateOnScroll();
+            checkCounters();
+        });
+        window.addEventListener('load', function() {
+            animateOnScroll();
+            checkCounters();
+        });
+    </script>
+</body>
+</html>
